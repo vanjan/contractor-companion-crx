@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "FreeAgent Contractor Companion",
+  "description": "Adds a button to IQNavigator that generates a FreeAgent invoice",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://augustus.iqnavigator.com/wicket/wicket/*"],
+      "js": ["jquery.js", "button.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab"
+  ]
+}
